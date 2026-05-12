@@ -1,0 +1,16 @@
+
+CREATE TABLE clientes (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL
+);
+
+CREATE TABLE pedidos (
+  id SERIAL PRIMARY KEY,
+  produto VARCHAR(255) NOT NULL,
+  valor NUMERIC(10,2) NOT NULL,
+  status VARCHAR(50) DEFAULT 'pendente',
+  cliente_id INTEGER REFERENCES clientes(id)
+);
+
+ALTER TABLE clientes ADD COLUMN IF NOT EXISTS telefone VARCHAR(20);
