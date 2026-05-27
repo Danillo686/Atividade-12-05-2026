@@ -1,0 +1,15 @@
+.clientes {
+  padding: 20px 0;
+}
+
+.clientes .header-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.clientes .header-page h1 {
+  font-size: 32px;
+  color: #333;
+}

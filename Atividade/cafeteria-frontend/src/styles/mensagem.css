@@ -1,0 +1,69 @@
+.mensagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  border-radius: var(--radius-md, 12px);
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 12px rgba(92, 64, 51, 0.03);
+  animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 12px;
+}
+
+.mensagem-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mensagem button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition-smooth);
+  opacity: 0.7;
+}
+
+.mensagem button:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mensagem-sucesso {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.mensagem-erro {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.mensagem-aviso {
+  background-color: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}

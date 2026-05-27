@@ -1,0 +1,15 @@
+.pedidos {
+  padding: 20px 0;
+}
+
+.pedidos .header-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pedidos .header-page h1 {
+  font-size: 32px;
+  color: #333;
+}
